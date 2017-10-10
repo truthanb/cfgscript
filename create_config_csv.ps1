@@ -29,7 +29,7 @@ for ($i; $i -lt $csvFile.Length; $i++)
         $typeNode.InnerText = $row.Type
         $addressNode = $xmlDoc.CreateElement("DNPAddress")
         $addressNode.InnerText = $row.Address
-        $locationNode = $xmlDoc.CreateElement("DeviceName")
+        $locationNode = $xmlDoc.CreateElement("LocationId")
         $locationNode.InnerText = $row.Location
         $deviceNode.AppendChild($nameNode)
         $deviceNode.AppendChild($modelNode)
