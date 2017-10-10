@@ -17,7 +17,7 @@ $xmlDoc = [System.Xml.XmlDocument](Get-Content $xmlPath);
 $i=0
 for ($i; $i -lt $csvFile.Length; $i++)
     { 
-        $row = $xlFile[$i]
+        $row = $csvFile[$i]
         $deviceNode = $xmlDoc.CreateElement("Device")
         $nameNode = $xmlDoc.CreateElement("DeviceName")
         $nameNode.InnerText = $row.Name
